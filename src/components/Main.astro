@@ -1,0 +1,123 @@
+<main>
+    <div class="imgContainer">
+        <img src="assets/photos/gatoadmirando.png" alt="" />
+    </div>
+    <div class="title">
+        <h1>Seriam os gatos astronautas?</h1>
+
+        <div class="reactionButtons">
+            <button class="reactionButton">
+                <img src="assets/thumbUp.svg" alt="Like" />
+            </button>
+            <button class="reactionButton">
+                <img src="assets/thumbDown.svg" alt="Dislike" />
+            </button>
+        </div>
+    </div>
+
+    <article>
+        <p>
+            Os gatos são animais fascinantes e cercados de mistérios. De
+            temperamento independente e misterioso, esses felinos são conhecidos
+            por sua agilidade, elegância e um comportamento muitas vezes
+            imprevisível. Contudo, recentemente, uma teoria tem ganhado espaço
+            na internet e entre teóricos de conspiração: seriam os gatos
+            astronautas? A teoria sugere que os gatos não são animais
+            terrestres, mas sim seres extraterrestres enviados para realizar uma
+            missão específica em nosso planeta. Há relatos históricos que
+            apontam para o fato de que os gatos eram considerados seres sagrados
+            em diferentes culturas e até mesmo associados a figuras divinas.
+            Isso poderia indicar que os gatos têm uma origem muito mais mística
+            do que se pensava anteriormente.
+        </p>
+
+        <p>
+            Além disso, há teóricos que acreditam que os felinos possuem
+            habilidades telepáticas e são capazes de se comunicar com outras
+            espécies alienígenas. Essa crença baseia-se em relatos de pessoas
+            que afirmam terem visto gatos reagindo a estímulos que não são
+            perceptíveis aos seres humanos, ou até mesmo se comportando de
+            maneira incomum durante eventos astronômicos, como uma aurora
+            boreal. Esses e outros indícios foram interpretados como sinais de
+            que os gatos seriam seres interplanetários.
+        </p>
+    </article>
+</main>
+
+<style>
+
+    .imgContainer {
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        scale: 1.1;
+    }
+
+    .title {
+        margin: 2.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .title h1 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--color-base-grey-800);
+    }
+
+    .reactionButtons {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    .reactionButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-base-sky-700);
+        padding: 1.2rem;
+        border-radius: 999px;
+        border: none;
+        cursor: pointer;
+    }
+
+    article {
+        margin: 0 2rem;
+    }
+
+    article p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.6;
+        color: var(--color-base-grey-900);
+    }
+
+    article p + p {
+        margin-top: 2rem;
+    }
+
+    @media screen and (min-width: 900px) {
+        main {
+            flex-basis: 100%;
+        }
+
+        img {
+            border-radius: 8px;
+            scale: 1;
+        }
+
+        .title {
+            margin: 2.5rem 0;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        article {
+            margin: 0;
+        }
+    }
+</style>
